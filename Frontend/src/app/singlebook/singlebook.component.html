@@ -1,0 +1,76 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+     
+<ul class="navbar-nav">
+    <a class="nav-link" routerLink="/home" >Home</a>
+    <a class="nav-link" routerLink="/books" >Books</a>
+    <a class="nav-link" routerLink="/authors" >Authors</a>
+    <a class="nav-link" routerLink="/addbook" *ngIf="_auth.loggedIn()" >Add Book</a>
+    <a class="nav-link" routerLink="/addauthor" *ngIf="_auth.loggedIn()">Add Author</a>
+    <a class="nav-link" style="cursor:pointer"  (click)="logoutUser()">Logout</a>
+
+</ul>
+</div>
+</nav>
+
+<div id="masthead">  
+  <div>
+    <a routerLink="/books" class="btn btn-danger" id="view">BACK TO BOOKS</a>
+    <h1>BOOK</h1>
+    
+    <div>
+  
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="top-spacer"> </div>
+      </div>
+    </div> 
+  </div><!-- /cont -->
+  
+</div>
+
+
+<div class="container">
+  <div class="row">
+    
+    <div class="col-md-12"> 
+      
+      <div class="panel">
+        <div class="panel-body">
+          
+          
+          
+          <!--/stories-->
+          <div class="bookk">
+          <div class="row">    
+            <br>
+            <div class="col-md-2 col-sm-3 text-centerr">
+              <a class="story-title" href="#"><img alt="" [src]="book.image"  style="width:170px;height:170px" class="img-rounded"></a>
+            </div>
+            <div class="col-md-10 col-sm-9">
+              <h3>{{book.title}}</h3>
+              <div class="row">
+                <div class="col-xs-9 autt">
+                    <h4 class="aut">{{book.author}}</h4>
+                    <h5 class="con"><p><b>{{book.content}}</b></p></h5></div>
+                  
+                <div class="col-xs-3"></div>
+              </div>
+              <br><br>
+            </div>
+          </div>
+          <hr>
+          </div>
+          <!--/stories-->
+          
+        </div>
+      </div>
+                                                                                       
+	                                                
+                                                      
+   	</div><!--/col-12-->
+  </div>
+</div>
+                                                
+                                                                                

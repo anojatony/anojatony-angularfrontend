@@ -1,0 +1,47 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+     
+<ul class="navbar-nav">
+    <a class="nav-link" routerLink="/home" >Home</a>
+    <a class="nav-link" routerLink="/books" >Books</a>
+    <a class="nav-link" routerLink="/authors" >Authors</a>
+    <a class="nav-link" routerLink="/addbook" *ngIf="_auth.loggedIn()" >Add Book</a>
+    <a class="nav-link" routerLink="/addauthor" *ngIf="_auth.loggedIn()">Add Author</a>
+    <a class="nav-link" style="cursor:pointer"  (click)="logoutUser()">Logout</a>
+
+</ul>
+</div>
+</nav>
+
+<div class="adbook">
+    <br>
+  <div class="container center-signb">
+    <div class="row justify-content-center">
+  <form #edBook="ngForm" (ngSubmit)="edBook.form.valid && updateBook(books)" class="frm" enctype= "multipart/form-data" >
+      <h3>UPDATE BOOK DETAILS</h3>
+      <div class="form-group">
+        <label>Title *</label>
+        <input type="text" class="form-control"  aria-describedby="emailHelp" name="title" placeholder="Title" [(ngModel)]="books.title" #title="ngModel" pattern="^[a-zA-Z0-9\s.,']+$" required>
+      </div>
+      <div class="form-group">
+        <label >Author *</label>
+      <input  class="form-control" name="author" placeholder="Author name" [(ngModel)]="books.author" #author="ngModel" pattern="^[a-zA-Z\s.']+$" required>
+      </div>
+      <div class="form-group">
+        <label >Genre *</label>
+        <input type="text" class="form-control"  name="genre" placeholder="Genre" [(ngModel)]="books.genre" #genre="ngModel" pattern="^[a-zA-Z\s]+$" required>
+      </div>
+      <div class="form-group">
+        <label >Description *</label>
+      <textarea class="form-control" name="content"  cols="96" rows="5" placeholder="Type Your Content here" [(ngModel)]="books.content" #content="ngModel" required pattern="^[a-zA-Z0-9\s,.']+$"></textarea>
+      </div>
+      <div class="form-group">
+        <label >Image *</label>
+       <input type="file" class="form-control-file" name="image" [(ngModel)]="books.image" #image="ngModel" (change)="selectImage($event)" required>
+        </div>
+      <button type="submit" class="btn btn-block btn-danger" [disabled]="edBook.form.invalid">UPDATE BOOK</button>
+    </form>
+  </div>
+  </div>
+  <br>
+  </div>

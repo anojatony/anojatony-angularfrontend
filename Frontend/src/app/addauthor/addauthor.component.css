@@ -1,0 +1,50 @@
+.adbook{
+    background-image: url(https://images.unsplash.com/photo-1508796028659-0680ab822890?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MzJ8fHxlbnwwfHx8fA%3D%3D&w=1000&q=80);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: top center;
+    height: 100%;
+    }
+
+.center-signb h3{
+    margin-top: 40px;
+    margin-left: 33%;
+    margin-bottom: 45px;
+    font-weight: bolder;
+  }
+  
+  .center-signb{
+    margin-top: 12%;
+    max-width: 740px;
+    width: 100%;
+    /* background-color: rgb(0,0,0,0.6); */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+    background-color: white;
+    border: 1px solid silver;
+    padding: 25px 40px;
+    border-radius: 5px;
+    margin-bottom: 60px;
+  }
+  .navbar-nav {
+    color:#fff;
+    font-weight: bolder;
+    text-transform: uppercase;
+  }
+  
+  .center-signb a{
+    text-decoration: none;
+    color: white;
+  }
+  .center-signb a:hover{
+    color: #4C6BBA;
+    text-decoration: none;
+  }
+  .form-control{
+    border: 1px solid grey;
+    background-color: #E5E4E2;
+    color: black;
+  }
+  .form-control:focus {
+    box-shadow: none;
+    border: 1px solid #4863A0;
+  }

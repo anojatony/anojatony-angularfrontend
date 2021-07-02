@@ -1,0 +1,22 @@
+.welcome{
+    background-image: url(https://wallpaperaccess.com/full/2862101.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    height: 100%;
+}
+.welcome h1{
+    color: white;
+    font-weight: bolder;
+    margin-top: 17%;
+    margin-bottom: 15%;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+  }
+
+
+  .navbar-nav {
+  color:#fff;
+  font-weight: bolder;
+  text-transform: uppercase;
+}

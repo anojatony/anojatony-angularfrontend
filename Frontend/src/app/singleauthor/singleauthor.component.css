@@ -1,0 +1,46 @@
+#masthead h1 {
+  /* margin-top: 5%; */
+  margin-bottom: 5%;
+  margin-left: 10%;
+}
+
+.navbar-nav {
+  color:#fff;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
+ #view{
+ margin-left: 75%;
+ margin-top: 5%;
+ font-weight: bolder;
+ }
+.bookk .aut{
+    color: orangered;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    text-align: justify;
+    margin-left: 20px;
+    margin-top: 6px;
+  }
+  .bookk .autt{
+    text-align: justify;
+    margin-left: 20px;
+  }
+  .bookk .con{
+    color: black;
+    text-align: justify;
+    margin-left: 20px;
+    margin-top: 3px;
+  }
+ 
+  
+  .bookk h3{
+    color: crimson;
+    font-family: Apple Chancery, cursive;
+    font-weight: bolder;
+    margin-left: 20px;
+  }
+  .text-centerr{
+    margin-top: 10px;
+  }

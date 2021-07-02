@@ -1,0 +1,24 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+     
+<ul class="navbar-nav">
+    <a class="nav-link" routerLink="/home" >Home</a>
+    <a class="nav-link" routerLink="/books" >Books</a>
+    <a class="nav-link" routerLink="/authors" >Authors</a>
+    <a class="nav-link" routerLink="/addbook" *ngIf="_auth.loggedIn()" >Add Book</a>
+    <a class="nav-link" routerLink="/addauthor" *ngIf="_auth.loggedIn()">Add Author</a>
+    <a class="nav-link" style="cursor:pointer"  (click)="logoutUser()">Logout</a>
+
+</ul>
+</div>
+</nav>
+
+    <div class="welcome">
+        <br>
+      <h1>WELCOME TO LIBRARY-APP </h1><br>
+      <a routerLink="/books" class="first" >EXPLORE BOOKS LIST</a>
+      <a routerLink="/authors" class="second" >EXPLORE AUTHORS LIST</a>
+      <br>
+    </div>
+    
+   

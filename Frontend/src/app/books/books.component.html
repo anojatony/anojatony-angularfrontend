@@ -1,0 +1,91 @@
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+     
+<ul class="navbar-nav">
+    <a class="nav-link" routerLink="/home" >Home</a>
+    <a class="nav-link" routerLink="/books" >Books</a>
+    <a class="nav-link" routerLink="/authors" >Authors</a>
+    <a class="nav-link" routerLink="/addbook" *ngIf="_auth.loggedIn()" >Add Book</a>
+    <a class="nav-link" routerLink="/addauthor" *ngIf="_auth.loggedIn()">Add Author</a>
+    <a class="nav-link" style="cursor:pointer"  (click)="logoutUser()">Logout</a>
+
+</ul>
+</div>
+</nav>
+
+<div id="masthead">  
+   
+  <div>
+    <a routerLink="/authors" class="btn btn-danger" id="view">VIEW AUTHORS</a>
+    <h1>BOOKS</h1>
+    
+    <div>
+        
+       
+    
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="top-spacer"> </div>
+        </div>
+      </div> 
+    </div><!-- /cont -->
+    
+  </div>
+  
+  
+  <div class="container">
+    <div class="row">
+      
+      <div class="col-md-12"> 
+        
+        <div class="panel">
+          <div class="panel-body">
+            
+            
+            
+            <!--/stories-->
+            <div class="bookkk" *ngFor='let book of books'>
+           
+            <div class="row">    
+              <br>
+              <div class="col-md-2 col-sm-3 text-center">
+                <a class="story-title" href="#"><img [src]="book.image"  style="width:140px;height:130px" class="img-rounded"></a>
+              </div>
+              <div class="col-md-10 col-sm-9">
+                <h3>{{book.title}}
+                  <small><a routerLink="" id="wel" style="float: right" *ngIf="_auth.loggedIn()" (click)="deleteBook(book)"> Delete</a></small>
+                 <small><a routerLink="" id="wel" style="float: right" *ngIf="_auth.loggedIn()" (click)="editBook(book)"> Update</a></small>
+                
+                </h3>
+                <div class="row">
+                  <div class="col-xs-9">
+                      <h5 class="aut">{{book.author}}
+                    <small  class="text">{{book.genre}}</small> </h5> 
+                     <h6 >
+                    <small class="text-muted"><a routerLink="" (click)="singleBook(book)">* Read More</a></small>
+                    </h6></div>
+                  <div class="col-xs-3"></div>
+                </div>
+                <br>
+                <br>
+              </div>
+            </div>
+
+            </div>
+            <!--/stories-->
+            
+            <br>
+            <a routerLink="/addbook" class="btn btn-danger" style="float: right;" *ngIf="_auth.loggedIn()">ADD A BOOK</a>
+          
+            
+          </div>
+        </div>
+                                                                                         
+                                                      
+                                                        
+         </div><!--/col-12-->
+    </div>
+  </div>
+                                                  

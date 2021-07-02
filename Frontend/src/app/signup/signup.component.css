@@ -1,0 +1,60 @@
+.sign{
+background-image: url(https://images.unsplash.com/photo-1508796028659-0680ab822890?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MzJ8fHxlbnwwfHx8fA%3D%3D&w=1000&q=80);
+background-repeat: no-repeat;
+background-size: cover; 
+background-position: top center;
+height: 100%;
+}
+input.ng-invalid.ng-touched{
+  border: 1px solid red;
+ }
+ input{
+  border: 1px solid grey;
+  background-color: #E5E4E2;
+  color: black;
+}
+.form-control:focus {
+  box-shadow: none;
+  border: 1px solid #4863A0;
+}
+.navbar-nav {
+  color:#fff;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
+
+.center-sign h3{
+    margin-top: 40px;
+    margin-left: 30%;
+    margin-bottom: 45px;
+    font-weight: bolder;
+  }
+  
+  .center-sign{
+    margin-top: 10%;
+    max-width: 700px;
+    width: 100%;
+    /* background-color: rgb(0,0,0,0.6); */
+    background-color: white;
+    padding: 25px 40px;
+    border-radius: 5px;
+    margin-bottom: 90px;
+    border: 1px solid silver;
+    border-radius: 5px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+  }
+  
+  .btn{
+    margin-left: 42%;
+  }
+  .center-sign a{
+    text-decoration: none;
+    /* color: white; */
+    color: blue;
+    font-size: smaller;
+  }
+  .center-sign a:hover{
+    color: black;
+    text-decoration: none;
+  }
